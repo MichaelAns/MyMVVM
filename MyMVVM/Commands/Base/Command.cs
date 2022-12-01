@@ -2,6 +2,9 @@
 
 namespace MyMVVM.Commands.Base
 {
+    /// <summary>
+    /// Base class for all commands
+    /// </summary>
     public abstract class Command : ICommand
     {
         public event EventHandler? CanExecuteChanged

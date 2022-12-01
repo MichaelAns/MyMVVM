@@ -2,6 +2,9 @@
 
 namespace MyMVVM.Commands
 {
+    /// <summary>
+    /// The main working command
+    /// </summary>
     public class RelayCommand : Command
     {
         private readonly Action<object> _execute;

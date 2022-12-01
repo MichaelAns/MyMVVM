@@ -4,6 +4,9 @@ using System.Windows.Input;
 
 namespace MyMVVM.Navigation.Navigators
 {
+    /// <summary>
+    /// Concrete basic navigator
+    /// </summary>
     public class Navigator : ViewModel, INavigator
     {
         private ViewModel _currentViewModel;
