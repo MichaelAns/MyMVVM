@@ -5,7 +5,7 @@ namespace MyMVVM.Navigation.Factory
     /// <summary>
     /// The factory responsible for the Viewmodel management logic
     /// </summary>
-    public interface IViewModelFactory
+    public interface IViewModelAbstractFactory
     {
         public ViewModel GetViewModel(object? parameter);
     }

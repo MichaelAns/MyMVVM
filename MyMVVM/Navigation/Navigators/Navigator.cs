@@ -10,10 +10,10 @@ namespace MyMVVM.Navigation.Navigators
     public class Navigator : ViewModel, INavigator
     {
         private ViewModel _currentViewModel;
-        private IViewModelFactory _viewModelFactory;
+        private IViewModelAbstractFactory _viewModelFactory;
 
         #region Конструкторы
-        public Navigator(ViewModel currentViewModel, IViewModelFactory viewModelFactory)
+        public Navigator(ViewModel currentViewModel, IViewModelAbstractFactory viewModelFactory)
         {
             _currentViewModel = currentViewModel;
             _viewModelFactory = viewModelFactory;
