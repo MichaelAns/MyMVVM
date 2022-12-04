@@ -3,7 +3,7 @@
     public class DataContainer
     {
         private DataContainer() { }
-        private IDataMessage _dataMessage;
+        public DataMessage DataMessage { get; set; }
 
         private static DataContainer instance;
         public static DataContainer GetInstance()
