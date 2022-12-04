@@ -1,4 +1,6 @@
 ﻿namespace MyMVVM.DataTransfer
 {
-    public abstract class DataMessage { }
+    public abstract class DataMessage
+    {
+    }
 }
