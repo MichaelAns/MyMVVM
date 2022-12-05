@@ -3,15 +3,10 @@
 namespace MyMVVM.Navigation.Factory
 {
     /// <summary>
-    /// The factory for creating specific ViewModel 
+    /// The factory responsible for the Viewmodel management logic
     /// </summary>
-    /// <typeparam name="T">T must be ViewModel</typeparam>
-    public interface IViewModelFactory<T> where T : ViewModel
+    public interface IViewModelFactory
     {
-        /// <summary>
-        /// Method for creating specific ViewModel
-        /// </summary>
-        /// <returns>Specific ViewModel</returns>
-        public T CreateViewModel();
+        public ViewModel GetViewModel(object? parameter);
     }
 }

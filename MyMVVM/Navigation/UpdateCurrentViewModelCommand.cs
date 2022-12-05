@@ -14,9 +14,9 @@ namespace MyMVVM.Navigation
         /// <summary>
         /// Viewmodel management logic
         /// </summary>
-        private readonly IViewModelAbstractFactory _viewModelFactory;
+        private readonly IViewModelFactory _viewModelFactory;
 
-        public UpdateCurrentViewModelCommand(INavigator navigator, IViewModelAbstractFactory viewModelFactory)
+        public UpdateCurrentViewModelCommand(INavigator navigator, IViewModelFactory viewModelFactory)
         {
             _navigator = navigator;
             _viewModelFactory = viewModelFactory;
