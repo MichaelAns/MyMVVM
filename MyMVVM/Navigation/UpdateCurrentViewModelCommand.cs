@@ -9,19 +9,18 @@ namespace MyMVVM.Navigation
         /// <summary>
         /// The necessary navigator
         /// </summary>
-        private INavigator _navigator;
+        private readonly INavigator _navigator;
 
         /// <summary>
         /// Viewmodel management logic
         /// </summary>
-        private IViewModelAbstractFactory _viewModelFactory;
+        private readonly IViewModelAbstractFactory _viewModelFactory;
 
         public UpdateCurrentViewModelCommand(INavigator navigator, IViewModelAbstractFactory viewModelFactory)
         {
             _navigator = navigator;
             _viewModelFactory = viewModelFactory;
         }
-
        
         public override bool CanExecute(object? parameter) => true;
 
