@@ -6,17 +6,15 @@ namespace MyMVVM.Navigation.Navigators
     public class ViewModelFactoryRenavigator<TViewModel> : IRenavigator where TViewModel:ViewModel
     {
         public readonly INavigator _navigator;
-        public readonly IViewModelFactory<TViewModel> _viewModelFactory;
 
-        public ViewModelFactoryRenavigator(INavigator navigator, IViewModelFactory<TViewModel> viewModelFactory)
+        public ViewModelFactoryRenavigator(INavigator navigator)
         {
             _navigator = navigator;
-            _viewModelFactory = viewModelFactory;
         }
 
         public void Renavigate()
         {
-            _navigator.CurrentViewModel = _viewModelFactory.CreateViewModel();
+            //_navigator.CurrentViewModel = _viewModelFactory.CreateViewModel();
         }
     }
 }
