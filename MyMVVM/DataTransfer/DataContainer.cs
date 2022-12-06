@@ -19,7 +19,6 @@
             if (instance == null)
             {
                 instance = new();
-                return instance;
             }
             return instance;
         }
